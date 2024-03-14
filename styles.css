@@ -25,6 +25,12 @@ p{
 h1{
     margin-left: 80px;
 }
+@media(max-width:600px){
+    .yoga-img{
+        display:none;
+    }
+    
+}
 button{
     display: block;
     margin-left: 50px;
