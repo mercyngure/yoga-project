@@ -4,10 +4,14 @@
 nav{
     background-color: antiquewhite;
 }
+nav ul{
+    padding: 0;
+    margin: 0;
+}
 nav li{
     display:inline;
-    justify-content: end;
-    line-height: 10px;
+    justify-content: right;
+    line-height: 30px;
     margin-right: 20px;
    
 }
@@ -20,4 +24,22 @@ p{
 }
 h1{
     margin-left: 80px;
+}
+button{
+    display: block;
+    margin-left: 50px;
+    font-size: 18px;
+    padding: 15px 25px;
+    background: green;
+    color: white;
+    border: none;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 5px 3px 5px rgba(44, 42, 42, 0.5);
+    
+}
+button:hover{
+    background: #8bcdcd;
+    color: #59405c;
+    transition: all 150ms ease-in-out;
 }
