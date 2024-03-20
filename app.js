@@ -5,7 +5,7 @@ function showAlert() {
 
 
     if (userInput !== null) {
-        alert("Hello, " + userInput + "! Congratulations! You have successfully registered for free yoga classes.");
+        alert("Congratulations " + userInput + "!  You have successfully registered for free yoga classes.");
     } else {
         alert("You cancelled the prompt.");
     }
