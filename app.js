@@ -1,14 +1,15 @@
 
-function showAlert() {
-    var userInput = prompt("Please enter your name:");
-    var userEmail = prompt("Please enter your email:");
+function applyNow() {
+    let firstName = prompt("Enter your firstName");
+    let age= prompt("Enter your age");
+    let heading=document.querySelector("h3")
 
-
-    if (userInput !== null) {
-        alert("Congratulations " + userInput + "!  You have successfully registered for free yoga classes.");
+    if (age >=18 ) {
+        heading.innerHTML=("Congratulations " +' ' + firstName + ' '+"!  Welcome to free yoga classes.");
     } else {
-        alert("You cancelled the prompt.");
-    }
+        if( age < 18) {
+        heading.innerHTML=("Sorry" + ' '+ firstName + ' ' + "you can't join yoga classes");
+    }}
 }
-
-document.getElementById("myButton").addEventListener("click", showAlert);
+let applyButton=document.querySelector("button");
+applyButton.addEventListener("click", applyNow);
